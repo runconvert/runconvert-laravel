@@ -6,14 +6,14 @@
     "keywords": ["runconvert", "laravel", "file converter", "convert", "pdf", "api", "sdk"],
     "homepage": "https://www.runconvert.com/docs",
     "require": {
-        "php": ">=8.1",
-        "illuminate/support": "^10.0|^11.0|^12.0",
-        "illuminate/http": "^10.0|^11.0|^12.0",
-        "illuminate/routing": "^10.0|^11.0|^12.0",
+        "php": ">=8.2",
+        "illuminate/support": "^12.0|^13.0",
+        "illuminate/http": "^12.0|^13.0",
+        "illuminate/routing": "^12.0|^13.0",
         "runconvert/runconvert-php": "^0.1"
     },
     "require-dev": {
-        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "orchestra/testbench": "^10.0|^11.0",
         "phpunit/phpunit": "^10.0|^11.0"
     },
     "autoload": {
