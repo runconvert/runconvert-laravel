@@ -22,16 +22,10 @@ jobs:
           - { laravel: "13", php: "8.4", testbench: "^11.0" }
     steps:
       - uses: actions/checkout@v5
-      # runconvert-php isn't on Packagist yet: check it out next to this repo and use it as a path repository.
-      - uses: actions/checkout@v5
-        with:
-          repository: runconvert/runconvert-php
-          path: runconvert-php
       - uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php }}
       - run: |
-          composer config repositories.php '{"type":"path","url":"runconvert-php","options":{"symlink":false,"versions":{"runconvert/runconvert-php":"0.1.0"}}}'
           composer require --dev "orchestra/testbench:${{ matrix.testbench }}" --no-update
           composer update --no-interaction --no-progress
       - run: vendor/bin/phpunit
