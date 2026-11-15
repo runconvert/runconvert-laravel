@@ -1,5 +1,7 @@
 # RunConvert SDK for Laravel
 
+> **Not published yet.** This SDK launches on Packagist soon, so the install command below won't work until then. Updates: https://www.runconvert.com/sdks
+
 Convert files between 240+ formats with the [RunConvert API](https://www.runconvert.com/docs) from Laravel:
 a configured client, a facade, and a signed webhook route that fires Laravel events.
 Built on [runconvert-php](https://github.com/runconvert/runconvert-php). Laravel 10, 11 and 12; PHP 8.1+.
