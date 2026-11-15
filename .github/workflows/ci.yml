@@ -22,11 +22,10 @@ jobs:
           - { laravel: "12", php: "8.3", testbench: "^10.0" }
     steps:
       - uses: actions/checkout@v5
-      # runconvert-php is private until launch: check it out next to this repo and use it as a path repository.
+      # runconvert-php isn't on Packagist yet: check it out next to this repo and use it as a path repository.
       - uses: actions/checkout@v5
         with:
           repository: runconvert/runconvert-php
-          token: ${{ secrets.SDK_REPOS_TOKEN }}
           path: runconvert-php
       - uses: shivammathur/setup-php@v2
         with:
