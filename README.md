@@ -4,7 +4,7 @@
 
 Convert files between 240+ formats with the [RunConvert API](https://www.runconvert.com/docs) from Laravel:
 a configured client, a facade, and a signed webhook route that fires Laravel events.
-Built on [runconvert-php](https://github.com/runconvert/runconvert-php). Laravel 10, 11 and 12; PHP 8.1+.
+Built on [runconvert-php](https://github.com/runconvert/runconvert-php). Laravel 12 and 13; PHP 8.2+.
 
 ```bash
 composer require runconvert/runconvert-laravel
